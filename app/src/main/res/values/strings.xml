@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">采集器</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+    <string name="V">V</string>
+    <string name="unit">单位</string>
+    <string name="T">℃</string>
+    <string name="value">0.0</string>
+</resources>

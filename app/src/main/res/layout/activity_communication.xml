@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".secondActivity.CommunicationStatus">
+    <include layout="@layout/top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                style="@style/settitle"
+                android:text="模式状态" />
+        </LinearLayout>
+        <LinearLayout style="@style/datalinelayout">
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="主机模式" />
+            <TextView style="@style/light" android:id="@+id/master"/>
+            <TextView
+                style="@style/Datatext"
+                android:text="从机个数" />
+
+            <TextView
+                android:id="@+id/slaveNO"
+                style="@style/settext"
+                android:text="0" />
+            <TextView style="@style/space" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+
+        <LinearLayout style="@style/datalinelayout">
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机模式" />
+            <TextView style="@style/light" android:id="@+id/slave"/>
+            <TextView
+                style="@style/Datatext" android:text="从机地址" />
+            <TextView android:id="@+id/slaveADDR" style="@style/settext" android:text="0" />
+            <TextView style="@style/space" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                style="@style/settitle"
+                android:text="从机状态"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/datalinelayout">
+
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机01" />
+            <TextView style="@style/light" android:id="@+id/slave1"/>
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机02" />
+            <TextView style="@style/light" android:id="@+id/slave2"/>
+            <TextView style="@style/space" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+        <LinearLayout style="@style/datalinelayout">
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机03" />
+            <TextView style="@style/light" android:id="@+id/slave3"/>
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机04" />
+            <TextView style="@style/light" android:id="@+id/slave4"/>
+            <TextView style="@style/space" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+        <LinearLayout style="@style/datalinelayout">
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机05" />
+            <TextView style="@style/light" android:id="@+id/slave5"/>
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机06" />
+            <TextView style="@style/light" android:id="@+id/slave6"/>
+            <TextView style="@style/space" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+        <LinearLayout style="@style/datalinelayout">
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机07" />
+            <TextView style="@style/light" android:id="@+id/slave7"/>
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机08" />
+            <TextView style="@style/light" android:id="@+id/slave8"/>
+            <TextView style="@style/space" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+        <LinearLayout style="@style/datalinelayout">
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机09" />
+            <TextView style="@style/light" android:id="@+id/slave9"/>
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机10" />
+            <TextView style="@style/light" android:id="@+id/slave10"/>
+            <TextView style="@style/space" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+        <LinearLayout style="@style/datalinelayout">
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机11" />
+            <TextView style="@style/light" android:id="@+id/slave11"/>
+            <TextView style="@style/space" />
+            <TextView style="@style/Datatext" android:text="从机12" />
+            <TextView style="@style/light" android:id="@+id/slave12"/>
+            <TextView style="@style/space" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

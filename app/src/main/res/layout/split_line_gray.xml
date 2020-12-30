@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View
+    android:id="@+id/spline"
+    android:background="#ffe2e8ed"
+    android:layout_width="fill_parent"
+    android:layout_height="3.0px"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

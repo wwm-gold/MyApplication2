@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">true</item>
+    </style>
+    <style name="AppTheme1" parent="@style/AppTheme">
+        <!--<item name="android:windowBackground">@drawable/welcome</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+    <style name="datalinelayout2">
+        <item name="android:background">#fff0f0f1</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:padding"> 2dp</item>
+
+    </style>
+    <style name="datalinelayout">
+        <item name="android:background">#fff</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:padding"> 2dp</item>
+
+    </style>
+    <style name="Datatitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle"> bold</item>
+    </style>
+    <style name="light">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/gray</item>
+    </style>
+    <style name="Datatext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="Datatext1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginRight">10sp</item>
+    </style>
+    <style name="settitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+    <style name="settext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:background">@drawable/tv_stroke</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="space">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>
