@@ -10,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme1">
-        <activity android:name=".secondActivity.PowerQuality"></activity>
+        <activity android:name=".secondActivity.SlaveSet"></activity>
+        <activity android:name=".secondActivity.TimeSet" />
+        <activity android:name=".secondActivity.Mqttset" />
+        <activity android:name=".secondActivity.WifiSet" />
+        <activity android:name=".secondActivity.PowerQuality" />
         <activity android:name=".secondActivity.CommunicationStatus" />
         <activity android:name=".secondActivity.FaultInfo" />
         <activity android:name=".secondActivity.RealDataActivity" />

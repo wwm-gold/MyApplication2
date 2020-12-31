@@ -3,6 +3,8 @@ package com.example.myapplication.secondActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
@@ -23,6 +25,9 @@ public class PowerQuality extends BaseActivity {
 
         TextView tv_title = (TextView)findViewById(R.id.tv_title);
         tv_title.setText("电能质量");
+        ImageView viewById = (ImageView)findViewById(R.id.iv_back);
+        viewById.setVisibility(View.VISIBLE);
+        viewById.setOnClickListener(this);
 
     }
     public Handler mHandler=new Handler(){
@@ -30,14 +35,11 @@ public class PowerQuality extends BaseActivity {
 
         }
     };
-
     protected void onResume(){
         super.onResume();
         MsgSocket instance = MsgSocket.getInstance();
         instance.setParameters(adrr,6,mHandler);
-        if (!MsgSocket.flag){
-            instance.start();
-        }
+
     }
 
     protected void onPause(){

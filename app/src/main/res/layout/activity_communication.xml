@@ -20,6 +20,11 @@
             <TextView
                 style="@style/settitle"
                 android:text="模式状态" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9" />
         </LinearLayout>
         <LinearLayout style="@style/datalinelayout">
             <TextView style="@style/space" />
@@ -56,6 +61,12 @@
                 style="@style/settitle"
                 android:text="从机状态"
                 />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9" />
+
         </LinearLayout>
 
         <LinearLayout style="@style/datalinelayout">

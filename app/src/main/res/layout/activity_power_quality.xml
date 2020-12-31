@@ -6,12 +6,471 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".secondActivity.PowerQuality">
-    <include layout="@layout/top_bar"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </LinearLayout>
+    <include layout="@layout/top_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="电压不\n平衡度" />
+
+                <TextView
+                    android:id="@+id/DATV0x165"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+
+                    style="@style/Datatitle"
+                    android:text="电流不\n平衡度" />
+                <TextView
+                    android:id="@+id/DATV0x166"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                style="@style/datalinelayout2">
+
+                <TextView
+                    style="@style/Datatitle" android:text="电压谐波"/>
+
+                <TextView
+                    style="@style/Datatext"
+                    android:text="@string/A"
+                    />
+                <TextView
+                    style="@style/Datatext"
+                    android:text="@string/B"
+                    />
+                <TextView
+                    style="@style/Datatext"
+                    android:text="@string/C"
+                    />
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/unit"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="电压谐波\n总含量" />
+
+                <TextView
+                    android:id="@+id/DATV0x167"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x168"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x169"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="3次" />
+
+                <TextView
+                    android:id="@+id/DATV0x16e"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x17c"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x18a"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="5次" />
+
+                <TextView
+                    android:id="@+id/DATV0x170"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x17e"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x18c"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="7次" />
+
+                <TextView
+                    android:id="@+id/DATV0x172"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x180"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x18e"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="9次" />
+
+                <TextView
+                    android:id="@+id/DATV0x174"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x182"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x190"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="11次" />
+
+                <TextView
+                    android:id="@+id/DATV0x176"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x184"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x192"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="13次" />
+
+                <TextView
+                    android:id="@+id/DATV0x178"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x186"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x194"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                style="@style/datalinelayout2">
+
+                <TextView
+                    style="@style/Datatitle" android:text="电流谐波"/>
+
+                <TextView
+                    style="@style/Datatext"
+                    android:text="@string/A"
+                    />
+                <TextView
+                    style="@style/Datatext"
+                    android:text="@string/B"
+                    />
+                <TextView
+                    style="@style/Datatext"
+                    android:text="@string/C"
+                    />
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/unit"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="电流谐波\n总含量" />
+
+                <TextView
+                    android:id="@+id/DATV0x198"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1a6"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1b4"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="3次" />
+
+                <TextView
+                    android:id="@+id/DATV0x19a"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1a8"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1b6"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="5次" />
+
+                <TextView
+                    android:id="@+id/DATV0x19c"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1aa"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1b8"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="7次" />
+
+                <TextView
+                    android:id="@+id/DATV0x19e"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1ac"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1ba"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="9次" />
+
+                <TextView
+                    android:id="@+id/DATV0x1a0"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1ae"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1bc"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="11次" />
+
+                <TextView
+                    android:id="@+id/DATV0x1a2"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1b0"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1be"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="13次" />
+
+                <TextView
+                    android:id="@+id/DATV0x1a4"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1b2"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+                <TextView
+                    android:id="@+id/DATV0x1c0"
+                    style="@style/Datatext"
+                    android:text="@string/value" />
+
+                <TextView
+                    style="@style/Datatext1"
+                    android:text="@string/baifen" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>

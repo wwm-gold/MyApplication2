@@ -14,6 +14,7 @@ public abstract class BaseActivity  extends AppCompatActivity implements View.On
     private MyApplication application;
     private BaseActivity oContext;
     private static volatile Activity mCurrentActivity;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//禁止横屏
@@ -23,6 +24,7 @@ public abstract class BaseActivity  extends AppCompatActivity implements View.On
         }
         oContext = this;// 把当前的上下文对象赋值给BaseActivity
         addActivity();// 调用添加方法
+
     }
 
     // 添加Activity方法

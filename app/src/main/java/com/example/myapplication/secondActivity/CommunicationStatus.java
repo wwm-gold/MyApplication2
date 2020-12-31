@@ -5,6 +5,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
@@ -27,6 +29,11 @@ public class CommunicationStatus extends BaseActivity {
 
         TextView tv_title = (TextView)findViewById(R.id.tv_title);
         tv_title.setText("通讯状态");
+        ImageView viewById = (ImageView)findViewById(R.id.iv_back);
+        viewById.setVisibility(View.VISIBLE);
+        viewById.setOnClickListener(this);
+
+
         Resources resources = this.getResources();
         gray = resources.getDrawable(R.drawable.gray);
         green=resources.getDrawable(R.drawable.green);

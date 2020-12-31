@@ -1,126 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:background="@color/gray1">
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray1">
     <include layout="@layout/top_bar" />
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <LinearLayout style="@style/datalinelayout">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
+        <TextView
+            style="@style/settitle"
+            android:text="互感器变比：" />
 
-                style="@style/datalinelayout2">
+        <EditText style="@style/settext"
+            android:id="@+id/huganqibianbi"
+            android:layout_weight="3"
+            android:text="200=1000/5"
+            android:textColor="@color/gray1"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/split_line_gray" />
+    <LinearLayout style="@style/datalinelayout">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
 
-                <TextView
-                    style="@style/Datatitle" />
+        <TextView
+            style="@style/settitle"
+            android:text="电采数据初始化：" />
 
-                <TextView
-                    style="@style/Datatext"
-                    android:text="@string/A"
-                    />
-                <TextView
-                    style="@style/Datatext"
-                    android:text="@string/B"
-                    />
-                <TextView
-                    style="@style/Datatext"
-                    android:text="@string/C"
-                    />
-                <TextView
-                    style="@style/Datatext"
-                    android:text="总/N"
-                    />
-                <TextView
-                    style="@style/Datatext1"
-                    android:text="@string/unit"
-                     />
-            </LinearLayout>
-            <include layout="@layout/split_line_gray" />
+        <EditText style="@style/settext"
+            android:layout_weight="3"
+            android:id="@+id/reset"
+            android:text="200=1000/5"
+            android:textColor="@color/gray1"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/split_line_gray" />
+    <LinearLayout style="@style/datalinelayout">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
 
-            <LinearLayout
-                style="@style/datalinelayout">
+        <TextView
+            style="@style/settitle"
+            android:text="A相电压增益：" />
 
-                <TextView
-                    style="@style/Datatitle"
-                    android:text="电压" />
+        <EditText style="@style/settext"
+            android:layout_weight="3"
+            android:id="@+id/Avadd"
+            android:text="200=1000/5"
+            android:textColor="@color/gray1"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/split_line_gray" />
+    <LinearLayout style="@style/datalinelayout">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
 
-                <TextView
-                    android:id="@+id/DATV0x15f"
-                    style="@style/Datatext"
-                    android:text="@string/value" />
-                <TextView
-                    android:id="@+id/DATV0x160"
-                    style="@style/Datatext"
-                    android:text="@string/value" />
-                <TextView
-                    android:id="@+id/DATV0x161"
-                    style="@style/Datatext"
-                    android:text="@string/value" />
-                <TextView
-                    style="@style/Datatext"
-                    android:visibility="visible"
-                    android:text="" />
+        <TextView
+            style="@style/settitle"
+            android:text="B相电压增益：" />
 
-                <TextView
-                    style="@style/Datatext1"
-                    android:text="@string/V" />
-            </LinearLayout>
-            <include layout="@layout/split_line_gray" />
-            <LinearLayout
-                style="@style/datalinelayout">
-                <TextView style="@style/Datatitle" android:text="电流" />
-                <TextView android:id="@+id/DATV0x162" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x163" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x164" style="@style/Datatext" android:text="@string/value" />
-                <TextView style="@style/Datatext" android:text="" />
-                <TextView style="@style/Datatext1" android:text="@string/A" />
-            </LinearLayout>
-            <include layout="@layout/split_line_gray" />
-            <LinearLayout
-                style="@style/datalinelayout">
+        <EditText style="@style/settext"
+            android:layout_weight="3"
+            android:id="@+id/Bvadd"
+            android:text="200=1000/5"
+            android:textColor="@color/gray1"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/split_line_gray" />
+    <LinearLayout style="@style/datalinelayout">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
 
-                <TextView
-                    style="@style/Datatitle"
-                    android:text="有功功率" />
+        <TextView
+            style="@style/settitle"
+            android:text="C相电压增益：" />
 
-                <TextView android:id="@+id/DATV0x100" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x102" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x104" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x106" style="@style/Datatext" android:text="@string/value" />
-                <TextView style="@style/Datatext1" android:text="kW" />
-            </LinearLayout>
-            <include layout="@layout/split_line_gray" />
-            <LinearLayout
-                style="@style/datalinelayout">
+        <EditText style="@style/settext"
+            android:layout_weight="3"
+            android:id="@+id/Cvadd"
+            android:text="200=1000/5"
+            android:textColor="@color/gray1"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/split_line_gray" />
+    <LinearLayout style="@style/datalinelayout">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
 
-                <TextView
-                    style="@style/Datatitle"
-                    android:text="无功功率" />
+        <TextView
+            style="@style/settitle"
+            android:text="A相电流增益：" />
 
-                <TextView android:id="@+id/DATV0x108" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x10a" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x10c" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x10e" style="@style/Datatext" android:text="@string/value" />
-                <TextView style="@style/Datatext1" android:text="kvar" />
-            </LinearLayout>
-            <include layout="@layout/split_line_gray" />
-            <LinearLayout
-                style="@style/datalinelayout">
+        <EditText style="@style/settext"
+            android:layout_weight="3"
+            android:text="200=1000/5"
+            android:id="@+id/Aaadd"
+            android:textColor="@color/gray1"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/split_line_gray" />
+    <LinearLayout style="@style/datalinelayout">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
 
-                <TextView
-                    style="@style/Datatitle"
-                    android:text="视在功率" />
+        <TextView
+            style="@style/settitle"
+            android:text="B相电流增益：" />
 
-                <TextView android:id="@+id/DATV0x110" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x112" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x114" style="@style/Datatext" android:text="@string/value" />
-                <TextView android:id="@+id/DATV0x116" style="@style/Datatext" android:text="@string/value" />
-                <TextView style="@style/Datatext1" android:text="kva" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+        <EditText style="@style/settext"
+            android:layout_weight="3"
+            android:text="200=1000/5"
+            android:id="@+id/Baadd"
+            android:textColor="@color/gray1"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/split_line_gray" />
+    <LinearLayout style="@style/datalinelayout">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+
+        <TextView
+            style="@style/settitle"
+            android:text="C相电流增益：" />
+
+        <EditText style="@style/settext"
+            android:layout_weight="3"
+            android:text="200=1000/5"
+            android:id="@+id/Caadd"
+            android:textColor="@color/gray1"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/split_line_gray" />
+
 </LinearLayout>

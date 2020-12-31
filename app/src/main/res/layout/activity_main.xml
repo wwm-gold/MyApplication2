@@ -68,7 +68,7 @@
                 android:layout_height="fill_parent"
                 android:layout_marginLeft="5dp"
                 android:padding="10.0dip"
-                android:src="@drawable/connect"/>
+                android:src="@drawable/net"/>
 
             <TextView android:textSize="16.0dip"
                 android:gravity="center"
@@ -100,8 +100,9 @@
                 android:text="故障信息" />
         </LinearLayout>
         <include layout="@layout/split_line_gray" />
+
         <LinearLayout android:orientation="horizontal"
-            android:id="@+id/parameterSet"
+            android:id="@+id/BaseEleSet"
             android:background="#ffffffff"
             android:layout_width="match_parent"
             android:layout_height="50.0dip"
@@ -112,17 +113,104 @@
                 android:layout_height="fill_parent"
                 android:layout_marginLeft="5dp"
                 android:padding="10.0dip"
-                android:src="@drawable/shezhi_sel"/>
+                android:src="@drawable/power"/>
 
             <TextView android:textSize="16.0dip"
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:layout_marginLeft="10.0dip"
-                android:text="参数设置" />
+                android:text="电气设置" />
         </LinearLayout>
         <include layout="@layout/split_line_gray" />
+        <LinearLayout android:orientation="horizontal"
+            android:id="@+id/wifiSet"
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:clickable="true">
 
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:padding="10.0dip"
+                android:src="@drawable/wifi2"/>
+
+            <TextView android:textSize="16.0dip"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:text="WIFI设置" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+        <LinearLayout android:orientation="horizontal"
+            android:id="@+id/mqttset"
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:padding="10.0dip"
+                android:src="@drawable/mqtt1"/>
+
+            <TextView android:textSize="16.0dip"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:text="MQTT设置" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+        <LinearLayout android:orientation="horizontal"
+            android:id="@+id/timeset"
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:padding="10.0dip"
+                android:src="@drawable/time"/>
+
+            <TextView android:textSize="16.0dip"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:text="时间设置" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
+        <LinearLayout android:orientation="horizontal"
+            android:id="@+id/slaveNameset"
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:padding="10.0dip"
+                android:src="@drawable/slave"/>
+
+            <TextView android:textSize="16.0dip"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:text="从机设置" />
+        </LinearLayout>
+        <include layout="@layout/split_line_gray" />
     </LinearLayout>
 
 

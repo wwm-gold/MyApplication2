@@ -7,4 +7,5 @@
     <string name="unit">单位</string>
     <string name="T">℃</string>
     <string name="value">0.0</string>
+    <string name="baifen">%</string>
 </resources>

@@ -121,6 +121,20 @@
                 <TextView android:id="@+id/DATV0x116" style="@style/Datatext" android:text="@string/value" />
                 <TextView style="@style/Datatext1" android:text="kva" />
             </LinearLayout>
+            <include layout="@layout/split_line_gray" />
+            <LinearLayout
+                style="@style/datalinelayout">
+
+                <TextView
+                    style="@style/Datatitle"
+                    android:text="功率因数" />
+
+                <TextView android:id="@+id/DATV0x154" style="@style/Datatext" android:text="@string/value" />
+                <TextView android:id="@+id/DATV0x155" style="@style/Datatext" android:text="@string/value" />
+                <TextView android:id="@+id/DATV0x156" style="@style/Datatext" android:text="@string/value" />
+                <TextView android:id="@+id/DATV0x157" style="@style/Datatext" android:text="@string/value" />
+                <TextView style="@style/Datatext1" android:text="In" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -3,7 +3,7 @@
     <!-- 设置一个黑色边框 -->
     <stroke
         android:width="4px"
-        android:color="@color/gray" />
+        android:color="@color/gray1" />
     <!-- 设置透明背景色 -->
     <solid android:color="@color/white" />
     <!-- 设置四个圆角的半径 -->

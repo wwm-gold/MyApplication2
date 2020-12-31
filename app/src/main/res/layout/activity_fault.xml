@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".secondActivity.FaultInfo">
+    tools:context=".secondActivity.FaultInfo"
+    android:orientation="vertical">
+    <include layout="@layout/top_bar"/>
+    <LinearLayout
+        android:background="@color/gray1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="序号"/>
+        <include layout="@layout/split_line_gray1" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="时间" />
+
+        <include layout="@layout/split_line_gray1" />
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="故障描述"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/fault_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>
